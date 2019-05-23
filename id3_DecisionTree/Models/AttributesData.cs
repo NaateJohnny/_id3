@@ -11,7 +11,7 @@ namespace id3_DecisionTree.Models
         //pagina 355 livro
         public ArrayList PropetiesValues { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
+        public string Label { get; set; }
 
         public AttributesData(string nameParam, ArrayList propetiesValuesParam)
         {
@@ -20,10 +20,10 @@ namespace id3_DecisionTree.Models
             this.PropetiesValues.Sort();
         }
 
-        public AttributesData(object descriptionParam)
+        public AttributesData(object labelParam)
         {
-            var descriptionList = (DataRow)descriptionParam;
-            this.Description = descriptionList.ItemArray[0].ToString();
+            var labelList = (DataRow)labelParam;
+            this.Label = labelList.ItemArray[0].ToString();
             this.Name = null;
             this.PropetiesValues = null;
         }

@@ -8,6 +8,11 @@ namespace Exec_Id3.Cli.Extensions
 {
     public class Utils
     {
+        /// <summary>
+        ///     Renderiza a árvore.
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="tabs"></param>
         public static void Render(Node root, string tabs)
         {
             Console.WriteLine(tabs + '|' + root.AttributeData.Name + '|');
@@ -24,7 +29,7 @@ namespace Exec_Id3.Cli.Extensions
             }
             else
             {
-                Console.WriteLine(tabs + "\t" + "[" + root.AttributeData.Description + "]");
+                Console.WriteLine(tabs + "\t" + "[" + root.AttributeData.Label + "]");
             }
         }
     }

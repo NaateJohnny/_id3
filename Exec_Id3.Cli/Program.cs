@@ -11,8 +11,10 @@ namespace Exec_Id3.Cli
     {
         static void Main(string[] args)
         {
+            /// Inicia os atriburos
             AttributesData[] attributes = ContextDataDB.InitAttributes();
 
+            /// Busca a base de dados
             DataTable dataDB = ContextDataDB.GetDataBase();
 
             DecisionTree id3_decisionTree = new DecisionTree();
