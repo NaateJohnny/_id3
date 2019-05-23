@@ -6,9 +6,11 @@ using System.Text;
 
 namespace id3_DecisionTree.Models
 {
+    /// <summary>
+    ///     Classe Atributo
+    /// </summary>
     public class AttributesData
     {
-        //pagina 355 livro
         public ArrayList PropetiesValues { get; set; }
         public string Name { get; set; }
         public string Label { get; set; }

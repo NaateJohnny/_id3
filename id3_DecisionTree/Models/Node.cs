@@ -5,6 +5,9 @@ using System.Text;
 
 namespace id3_DecisionTree.Models
 {
+    /// <summary>
+    ///     Classe Nó
+    /// </summary>
     public class Node
     {
         public ArrayList Children { get; set; }
